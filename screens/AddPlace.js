@@ -5,4 +5,5 @@ export const AddPlace = () => {
   return (
     <PlaceForm />
   );
+
 }
