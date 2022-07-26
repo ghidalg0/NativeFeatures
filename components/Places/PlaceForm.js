@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { Colors } from "../../constants/colors";
+import { Button } from "../ui/Button";
 import { ImagePicker } from "./ImagePicker";
 import { LocationPicker } from "./LocationPicker";
 
@@ -13,6 +14,8 @@ export const PlaceForm = () => {
     setEnteredTitle(enteredText)
   };
 
+  const savePlaceHandler = () => {};
+
   return (
     <ScrollView style={styles.form}>
       <View>
@@ -21,6 +24,7 @@ export const PlaceForm = () => {
       </View>
       <ImagePicker />
       <LocationPicker />
+      <Button onPress={savePlaceHandler}>Add Place</Button>
     </ScrollView>
   );
 }
