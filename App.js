@@ -10,7 +10,7 @@ import { IconButton } from './components/ui/IconButton';
 import { Colors } from './constants/colors';
 import  { Map }  from './screens/Map';
 import { useEffect, useState } from 'react';
-import { init } from './util/db';
+import { init, insertPlace } from './util/db';
 import AppLoading from 'expo-app-loading';
 
 const Stack = createNativeStackNavigator();
