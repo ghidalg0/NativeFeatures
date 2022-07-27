@@ -12,7 +12,7 @@ export const AllPlaces = ({ route }) => {
   useEffect(() => {
     const loadPlaces = async () => {
       const places = await fetchPlaces();
-      setLoadedPlaces(places)
+      setLoadedPlaces(places);
     }
 
     if (isFocused) {
