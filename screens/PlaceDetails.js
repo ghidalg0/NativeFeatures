@@ -8,7 +8,12 @@ export const PlaceDetails = ({route, navigation}) => {
 
   const [place, setPlace] = useState();
 
-  const showOnMapHandler = () => {};
+  const showOnMapHandler = () => {
+    navigation.navigate("Map", {
+      initialLat: place.location.lat,
+      initialLng: place.location.lng,
+    });
+  };
 
   const selectedPlaceId = route.params.placeId;
 
